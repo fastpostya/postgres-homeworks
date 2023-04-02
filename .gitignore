@@ -1,6 +1,8 @@
 # Local configuration file
 database.ini
 
+try/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
