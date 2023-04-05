@@ -31,9 +31,9 @@ def drop_all(password, database_name):
     ) as conn:
         with conn.cursor() as cur:
             drop_text = '''
-            DROP TABLE orders_data;
-            DROP TABLE employees_data;
-            DROP TABLE customers_data;
+            DROP TABLE IF EXISTS orders_data;
+            DROP TABLE IF EXISTS employees_data;
+            DROP TABLE IF EXISTS customers_data;
             '''
             cur.execute(drop_text)
 
